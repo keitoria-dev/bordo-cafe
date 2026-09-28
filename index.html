@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bordô Café · Cafés, croissants e doces feitos na hora</title>
+  <meta name="description" content="Peça pelo WhatsApp: cafés, croissants, panquecas e doces artesanais.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a href="#topo" class="logo">Bordô<span>Café</span></a>
+    <nav class="nav" id="nav" aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#combos">Combos</a>
+      <a href="#contato">Contato</a>
+      <a href="#" class="btn btn--light" data-wa="Olá! Quero fazer um pedido.">Pedir agora</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+  </header>
+
+  <main id="topo">
+
+    <!-- ============ HERO (imagem fixa, sem parallax) ============ -->
+    <section class="hero">
+      <div class="px"><img src="img/hero-2.jpg" alt="Café e danish de framboesa"></div>
+      <span class="star s1">✦</span><span class="star s2">✦</span><span class="star s3">✦</span>
+      <div class="hero__grid">
+        <div class="hero__text">
+          <h1 class="mask" data-mask>Café quentinho e doce feito na hora.</h1>
+          <p>Escolha no cardápio e peça pelo WhatsApp. Retire sem fila.</p>
+          <div class="hero__btns">
+            <a href="#cardapio" class="btn btn--light">Ver cardápio</a>
+            <a href="#" class="btn btn--ghost" data-wa="Olá! Quero fazer um pedido.">Pedir no WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <figure class="polaroid">
+            <img src="img/produto.jpg" alt="Café cremoso com chantilly">
+            <figcaption>Café do dia</figcaption>
+          </figure>
+          <div class="ring">
+            <svg viewBox="-150 -150 300 300" aria-hidden="true">
+              <defs><path id="ctPath" d="M -118,0 A 118,118 0 1 1 118,0 A 118,118 0 1 1 -118,0"/></defs>
+              <g id="ctRotor"><text><textPath href="#ctPath">Cappuccino cremoso · Feito na hora · </textPath></text></g>
+            </svg>
+            <img src="img/produto-4.jpg" alt="Cappuccino">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAIXA ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Cafés · Croissants · Panquecas · Donuts · Cookies · Peça pelo WhatsApp · </span>
+        <span>Cafés · Croissants · Panquecas · Donuts · Cookies · Peça pelo WhatsApp · </span>
+      </div>
+    </div>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="wrap about" id="sobre">
+      <div class="about__media" data-reveal>
+        <img src="img/produto-16.jpg" alt="Croissant de peru com alface" class="about__img about__img--a">
+        <img src="img/produto-5.jpg" alt="Café coado" class="about__img about__img--b">
+        <div class="about__ring"></div>
+      </div>
+      <div class="about__text" data-reveal>
+        <span class="eyebrow">Nossa história</span>
+        <h2 class="mask" data-mask>Torra lenta, receitas de família e um cantinho pra você respirar.</h2>
+        <p>Começamos torrando grãos para os amigos e hoje servimos café, croissants e doces feitos todos os dias, do jeito que a gente mesmo gosta de comer.</p>
+        <ul class="about__list">
+          <li><b>+8</b> anos de casa</li>
+          <li><b>100%</b> feito na hora</li>
+          <li><b>5★</b> nas avaliações</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO ============ -->
+    <section class="band band--cream" id="cardapio">
+      <div class="wrap">
+        <div class="head" data-reveal><h2>Nosso menu de <span class="rt"><span class="rt__stack" id="rtStack"></span></span></h2></div>
+        <div class="tabs" id="tabs" role="tablist">
+          <button class="tab is-on" data-cat="all">Todos</button>
+          <button class="tab" data-cat="cafe">Cafés</button>
+          <button class="tab" data-cat="croissant">Croissants</button>
+          <button class="tab" data-cat="panqueca">Panquecas</button>
+          <button class="tab" data-cat="doce">Doces</button>
+        </div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA (slides em tiras) ============ -->
+    <section class="wrap gallery" id="galeria">
+      <div class="head" data-reveal><h2>Um gostinho da casa</h2></div>
+      <div class="strips" id="strips" data-reveal>
+        <div class="strip is-active" style="--bg:url('img/produto-9.jpg')"><span>Croissant club</span></div>
+        <div class="strip" style="--bg:url('img/produto-17.jpg')"><span>Croissant Lotus &amp; pistache</span></div>
+        <div class="strip" style="--bg:url('img/produto-2.jpg')"><span>Mocha com chantilly</span></div>
+        <div class="strip" style="--bg:url('img/produto.jpg')"><span>Café cremoso especial</span></div>
+        <div class="strip" style="--bg:url('img/produto-12.jpg')"><span>Panqueca de Nutella</span></div>
+       
+  
+      </div>
+      <button class="strips__next" id="stripsNext" aria-label="Próxima foto">
+        <svg viewBox="0 0 24 24"><path d="M12 16.5 4.5 9l1.4-1.4L12 13.7l6.1-6.1L19.5 9 12 16.5Z"/></svg>
+      </button>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="band" id="diferenciais">
+      <div class="wrap">
+        <div class="head" data-reveal><h2>Por que pedir aqui</h2></div>
+        <div class="services" data-reveal>
+          <article><span class="icon">☕</span><h3>Feito na hora</h3><p>Cada pedido sai quentinho, preparado só depois que você pede.</p></article>
+          <article><span class="icon">🥐</span><h3>Ingredientes frescos</h3><p>Grãos selecionados e massas assadas todos os dias.</p></article>
+          <article><span class="icon">⏱</span><h3>Retire sem fila</h3><p>Peça antes e busque no balcão quando estiver pronto.</p></article>
+          <article><span class="icon">💬</span><h3>Pedido no WhatsApp</h3><p>Um toque no produto e a mensagem já vai pronta.</p></article>
+        </div>
+        <div class="divider"><span>café · doce · carinho</span></div>
+
+        <!-- Imagem grande (fixa, sem parallax) -->
+        <div class="bigimg" data-reveal><div class="px"><img src="img/hero.jpg" alt="Café com torta de merengue" loading="lazy"></div></div>
+        <h2 class="bigtitle mask" data-mask>Um café, um doce e um momento só seu. Peça pelo WhatsApp.</h2>
+      </div>
+    </section>
+
+    <!-- ============ COMBOS ============ -->
+    <section class="wrap combos" id="combos">
+      <div class="head" data-reveal><h2>Combos da casa</h2></div>
+      <div class="offers" data-reveal>
+        <article class="offer"><b class="badge">A</b><h3>Café + Croissant</h3><p>Café coado e croissant de blueberry.</p><span class="price">R$ 21,00</span><a href="#" class="pill" data-wa="Olá! Quero o Combo A (Café coado + Croissant de blueberry).">Pedir combo</a></article>
+        <article class="offer"><b class="badge">B</b><h3>Cappuccino + Cookie</h3><p>Cappuccino cremoso e cookie de chocolate.</p><span class="price">R$ 18,00</span><a href="#" class="pill" data-wa="Olá! Quero o Combo B (Cappuccino + Cookie de chocolate).">Pedir combo</a></article>
+        <article class="offer offer--hot"><b class="badge">C</b><h3>Panqueca + Café</h3><p>Panqueca com mel e morango e um café coado.</p><span class="price">R$ 27,00</span><a href="#" class="pill pill--dark" data-wa="Olá! Quero o Combo C (Panqueca com mel + Café coado).">Pedir combo</a></article>
+        <article class="offer"><b class="badge">D</b><h3>Donut + Mocha</h3><p>Donut de chocolate e mocha com chantilly.</p><span class="price">R$ 25,00</span><a href="#" class="pill" data-wa="Olá! Quero o Combo D (Donut de chocolate + Mocha com chantilly).">Pedir combo</a></article>
+      </div>
+    </section>
+
+    <!--REDES SOCIAIS-->
+    <section class="band band--cream" id="social">
+      <div class="wrap social">
+        <div class="head" data-reveal><h2>Siga a Bordô Café</h2></div>
+        <p class="social__lead" data-reveal>Bastidores, novidades do cardápio e promoções em primeira mão.</p>
+
+        <div class="scard" id="scard" data-reveal>
+          <div class="scard__bg"></div>
+          <div class="scard__logo"><span>Siga nossas redes sociais!</span></div>
+
+          <a class="sbox sbox1" href="https://instagram.com/seuinsta" target="_blank" rel="noopener" aria-label="Instagram" style="--g:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c2.9 0 3.3 0 4.5.1 1.1.1 1.9.3 2.3.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1.2.5 2.3.1 1.2.1 1.6.1 4.5s0 3.3-.1 4.5c-.1 1.1-.3 1.9-.5 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1.2.4-2.3.5-1.2.1-1.6.1-4.5.1s-3.3 0-4.5-.1c-1.1-.1-1.9-.3-2.3-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1.2-.5-2.3-.1-1.2-.1-1.6-.1-4.5s0-3.3.1-4.5c.1-1.1.3-1.9.5-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1.2-.4 2.3-.5C8.7 2.2 9.1 2.2 12 2.2Zm0 3.1a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4Zm0 2.4a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6Zm6.9-2.6a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0Z"/></svg>
+          </a>
+          <a class="sbox sbox2" href="https://facebook.com/suapagina" target="_blank" rel="noopener" aria-label="Facebook" style="--g:linear-gradient(160deg,#3b6dd9,#1b3a7a)">
+            <svg viewBox="0 0 24 24"><path d="M13.5 22v-8.4h2.8l.4-3.3h-3.2V8.2c0-1 .3-1.6 1.7-1.6h1.8V3.7c-.4-.1-1.4-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.5H7.6v3.3h2.8V22h3.1Z"/></svg>
+          </a>
+          <a class="sbox sbox3" href="https://tiktok.com/@seutiktok" target="_blank" rel="noopener" aria-label="TikTok" style="--g:linear-gradient(160deg,#25f4ee,#111 55%,#fe2c55)">
+            <svg viewBox="0 0 24 24"><path d="M14 3c.4 2.1 1.8 3.7 3.9 4v3a7 7 0 0 1-3.9-1.2v6.6a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.8 2.4V3H14Z"/></svg>
+          </a>
+          <a class="sbox sbox4" href="#" data-wa="Olá! Quero fazer um pedido." aria-label="WhatsApp" style="--g:linear-gradient(160deg,#25d366,#0f7a3d)">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.6-1.2 1.2-1.7 1.3-.4.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.6-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.6-.1.2-.2.7-.8.9-1 .2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="contato">
+      <div class="wrap">
+        <h2>Pronto para o seu café?</h2>
+        <a href="#" class="btn btn--light" data-wa="Olá! Gostaria de fazer um pedido.">Pedir no WhatsApp</a>
+        <p class="cta__info">Rua Exemplo, 123 · Fortaleza, CE<br>Seg a Sáb: 7h às 20h · Dom: 8h às 14h</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Bordô Café · Todos os direitos reservados</footer>
+
+  <a href="#" class="fab" data-wa="Olá! Quero fazer um pedido." aria-label="Pedir pelo WhatsApp">Pedir no WhatsApp</a>
+
+  <script>
+    /* ============ CONFIGURAÇÃO ============ */
+    const WHATSAPP = '5585999999999'; // DDI + DDD + número (só dígitos)
+    const waLink = msg => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const noHover = matchMedia('(hover: none)').matches;
+
+    /* ============ PRODUTOS (imagem confere com o nome) ============ */
+    const products = [
+      { cat: 'cafe',      name: 'Cappuccino',             desc: 'Espresso e leite vaporizado com arte na espuma.', price: 'R$ 12,00', img: 'produto-4.jpg' },
+      { cat: 'cafe',      name: 'Café coado',             desc: 'Grãos selecionados, sem açúcar.',                  price: 'R$ 7,00',  img: 'produto-5.jpg' },
+      { cat: 'cafe',      name: 'Café cremoso especial',  desc: 'Camadas de café, leite e chantilly com cacau.',    price: 'R$ 16,00', img: 'produto.jpg' },
+      { cat: 'cafe',      name: 'Mocha com chantilly',    desc: 'Café, chocolate e uma nuvem de chantilly.',        price: 'R$ 18,00', img: 'produto-2.jpg' },
+      { cat: 'croissant', name: 'Croissant de blueberry', desc: 'Creme suave e mirtilos frescos.',                  price: 'R$ 16,00', img: 'produto-14.jpg' },
+      { cat: 'croissant', name: 'Croissant ovo e salmão', desc: 'Integral com ovo, salmão e brotos.',               price: 'R$ 26,00', img: 'produto-15.jpg' },
+      { cat: 'croissant', name: 'Croissant de peru',      desc: 'Cream cheese, peito de peru e alface.',            price: 'R$ 19,00', img: 'produto-16.jpg' },
+      { cat: 'croissant', name: 'Croissant Lotus',        desc: 'Creme de pistache e calda de biscoito Lotus.',     price: 'R$ 18,00', img: 'produto-17.jpg' },
+      { cat: 'panqueca',  name: 'Panqueca banana e kiwi', desc: 'Calda de chocolate e hortelã.',                    price: 'R$ 24,00', img: 'produto-11.jpg' },
+      { cat: 'panqueca',  name: 'Panqueca de Nutella',    desc: 'Morango, amora e açúcar de confeiteiro.',          price: 'R$ 26,00', img: 'produto-12.jpg' },
+      { cat: 'panqueca',  name: 'Panqueca com mel',       desc: 'Fofinhas com morangos e mel.',                     price: 'R$ 22,00', img: 'produto-7.jpg' },
+      { cat: 'panqueca',  name: 'Panqueca de framboesa',  desc: 'Camadas de chocolate ao leite.',                   price: 'R$ 26,00', img: 'produto-8.jpg' },
+      { cat: 'doce',      name: 'Donut de chocolate',     desc: 'Cobertura de chocolate e granulado.',              price: 'R$ 9,00',  img: 'produto-18.jpg' },
+      { cat: 'doce',      name: 'Donut açucarado',        desc: 'Macio, recheado e polvilhado.',                    price: 'R$ 8,00',  img: 'produto-19.jpg' },
+      { cat: 'doce',      name: 'Cookie de chocolate',    desc: 'Casquinha crocante, miolo macio.',                 price: 'R$ 8,00',  img: 'produto-21.jpg' },
+      { cat: 'doce',      name: 'Biscoito de geleia',     desc: 'Amanteigado com geleia no centro.',                price: 'R$ 6,00',  img: 'produto-22.jpg' },
+     
+    ];
+
+    /* ============ RENDERIZAR CARDÁPIO ============ */
+    const grid = document.getElementById('grid');
+    function renderGrid(cat) {
+      grid.innerHTML = products
+        .filter(p => cat === 'all' || p.cat === cat)
+        .map(p => `
+          <a class="pcard" href="${waLink(`Olá! Quero pedir: ${p.name} (${p.price}).`)}" target="_blank" rel="noopener">
+            <div class="pcard__img" data-label="Pedir no WhatsApp"><img src="img/${p.img}" alt="${p.name}" loading="lazy"></div>
+            <div class="pcard__info">
+              <h3>${p.name}</h3>
+              <p>${p.desc}</p>
+              <span class="pcard__price">${p.price}</span>
+              <span class="pill">Pedir</span>
+            </div>
+          </a>`).join('');
+    }
+    renderGrid('all');
+
+    /* ============ FILTROS ============ */
+    document.getElementById('tabs').addEventListener('click', e => {
+      const btn = e.target.closest('.tab');
+      if (!btn) return;
+      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('is-on', t === btn));
+      renderGrid(btn.dataset.cat);
+    });
+
+    /* ============ LINKS DO WHATSAPP (data-wa) ============ */
+    document.querySelectorAll('[data-wa]').forEach(a => {
+      a.href = waLink(a.dataset.wa);
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+
+    /* ============ MENU MOBILE ============ */
+    const header = document.getElementById('header');
+    const burger = document.getElementById('burger');
+    function toggleMenu(open) {
+      header.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('lock', open);
+    }
+    burger.addEventListener('click', () => toggleMenu(!header.classList.contains('is-open')));
+    document.getElementById('nav').addEventListener('click', e => { if (e.target.closest('a')) toggleMenu(false); });
+    addEventListener('resize', () => { if (innerWidth > 800) toggleMenu(false); });
+
+    /* ============ HEADER SÓLIDO AO ROLAR ============ */
+    addEventListener('scroll', () => header.classList.toggle('is-solid', scrollY > 40), { passive: true });
+
+    /* ============ TEXTO REVELADO (slide mask, suave) ============ */
+    document.querySelectorAll('[data-mask]').forEach(el => {
+      const words = el.textContent.trim().split(' ');
+      el.setAttribute('aria-label', el.textContent.trim());
+      el.innerHTML = words.map(w =>
+        `<span class="w" aria-hidden="true">${[...w].map(c => `<span class="c"><span class="i">${c}</span></span>`).join('')}</span>`
+      ).join(' ');
+      el.querySelectorAll('.i').forEach((s, i) => s.style.transitionDelay = `${Math.min(i * 24, 760)}ms`);
+    });
+    const maskIO = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); maskIO.unobserve(en.target); } });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('[data-mask]').forEach(el => reduce ? el.classList.add('is-in') : maskIO.observe(el));
+
+    /* ============ REVELAR AO ROLAR (fade + sobe) ============ */
+    const revealIO = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); revealIO.unobserve(en.target); } });
+    }, { threshold: 0.18 });
+    document.querySelectorAll('[data-reveal]').forEach(el => reduce ? el.classList.add('is-in') : revealIO.observe(el));
+
+    /* ============ TEXTO GIRATÓRIO AO REDOR DO PRODUTO (suave) ============ */
+    const rotor = document.getElementById('ctRotor');
+    if (!reduce) {
+      const t0 = performance.now();
+      (function loop() {
+        rotor.setAttribute('transform', `rotate(${((performance.now() - t0) / 1000) * 5})`);
+        requestAnimationFrame(loop);
+      })();
+    }
+
+    /* ============ PALAVRA QUE MUDA (menu de ...) ============ */
+    const stack = document.getElementById('rtStack');
+    const words = ['cafés.', 'croissants.', 'panquecas.', 'doces.'];
+    let idx = 0;
+    words.forEach(w => { const s = document.createElement('span'); s.textContent = w; stack.appendChild(s); });
+    function sizeStack() {
+      stack.style.width = 'auto';
+      const max = Math.max(...[...stack.children].map(s => s.getBoundingClientRect().width));
+      stack.style.width = Math.ceil(max) + 2 + 'px';
+    }
+    function layoutStack(instant) {
+      [...stack.children].forEach((s, i) => {
+        const o = i - idx;
+        s.style.transition = instant ? 'none' : 'transform .8s cubic-bezier(.22,.61,.36,1), opacity .6s';
+        s.style.transform = `translateY(${o * 100}%) rotateX(${o * 90}deg)`;
+        s.style.opacity = o === 0 ? '1' : '0';
+      });
+    }
+    sizeStack(); layoutStack(true);
+    document.fonts.ready.then(sizeStack);
+    addEventListener('resize', sizeStack);
+    if (!reduce) setInterval(() => { idx = (idx + 1) % words.length; layoutStack(false); }, 2000);
+
+    /* ============ GALERIA EM TIRAS (hover no desktop; seta + auto no celular) ============ */
+    const strips = [...document.querySelectorAll('.strip')];
+    let stripIdx = 0;
+    function showStrip(i) {
+      strips[stripIdx].classList.remove('is-active');
+      stripIdx = (i + strips.length) % strips.length;
+      strips[stripIdx].classList.add('is-active');
+    }
+    let stripsTimer;
+    function startStripsAuto() {
+      if (reduce) return;
+      clearInterval(stripsTimer);
+      stripsTimer = setInterval(() => showStrip(stripIdx + 1), 3200);
+    }
+    document.getElementById('stripsNext').addEventListener('click', () => { showStrip(stripIdx + 1); startStripsAuto(); });
+    if (noHover) startStripsAuto();
+
+    /*  CARD DE REDES SOCIAIS (abre sozinho ao rolar no celular)  */
+    const scard = document.getElementById('scard');
+    if (noHover) {
+      const scardIO = new IntersectionObserver(entries => {
+        entries.forEach(en => scard.classList.toggle('is-in', en.isIntersecting));
+      }, { threshold: 0.5 });
+      scardIO.observe(scard);
+    }
+
+    /* ============ RODAPÉ ============ */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
